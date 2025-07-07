@@ -53,6 +53,8 @@ if not os.path.exists(UPLOAD_FILE):
 # Database config
 app.config['SQLALCHEMY_DATABASE_URI'] = SQLALCHEMY_DATABASE_URI
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = SQLALCHEMY_TRACK_MODIFICATIONS
+print("📦 SQLALCHEMY_DATABASE_URI =", app.config['SQLALCHEMY_DATABASE_URI'])
+
 
 db.init_app(app)
 

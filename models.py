@@ -45,9 +45,6 @@ class Reimbursement(db.Model):
 
     department = db.Column(db.String(100), default='Unknown')
 
-    faculty_name = db.Column(db.String(100))
-    faculty_department = db.Column(db.String(100))
-    members = db.Column(db.Text)
 
 # db.py (PostgreSQL + SQLAlchemy version)
 def insert_user(name, email, password_hash, role, department):
