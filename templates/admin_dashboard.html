@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Accountant Final Check</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='acc.css') }}">
+
+    <!-- Custom Inline Styling -->
+    <style>
+        .bg-custom-blue {
+            background-color: #003366 !important;
+        }
+        .text-custom-blue {
+            color: #003366 !important;
+        }
+        .btn-custom-blue {
+            background-color: #003366;
+            color: white;
+        }
+        .btn-custom-blue:hover {
+            background-color: #00509e;
+            color: white;
+        }
+        textarea {
+            resize: vertical;
+        }
+    </style>
+</head>
+<body class="bg-light">
+
+    <!-- FCRIT Header -->
+    <div class="container-fluid bg-custom-blue text-white py-3">
+        <div class="row align-items-center">
+            <div class="col-auto">
+                <img src="{{ url_for('static', filename='logo.png') }}" alt="College Logo" class="img-fluid rounded" style="height: 100px;">
+            </div>
+            <div class="col">
+                <h1 class="h4 mb-0">Fr. C Rodrigues Institute of Technology, Vashi</h1>
+            </div>
+            <div class="col-auto">
+                <form method="POST" action="{{ url_for('logout') }}">
+                    <button type="submit" class="btn btn-light text-custom-blue fw-bold">Logout</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+        <!-- Users Table -->
+        <div class="card mb-5 shadow-sm">
+            <div class="card-header bg-primary text-white">
+                <h5 class="mb-0">All Users</h5>
+            </div>
+            <div class="card-body p-0">
+                <table class="table table-striped table-hover m-0">
+                    <thead class="table-light">
+                        <tr>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Role</th>
+                            <th>Department</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for user in users %}
+                        <tr>
+                            <td>{{ user[0] }}</td>
+                            <td>{{ user[1] }}</td>
+                            <td>{{ user[2] }}</td>
+                            <td>{{ user[3] or '-' }}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Reimbursement Table -->
+        <div class="card shadow-sm">
+            <div class="card-header bg-success text-white d-flex justify-content-between align-items-center">
+                <h5 class="mb-0">Reimbursement Requests</h5>
+                <a href="{{ url_for('export_reimbursements') }}" class="btn btn-light btn-sm">📥 Export as CSV</a>
+            </div>
+            <div class="card-body p-0">
+                <div class="table-responsive">
+                    <table class="table table-bordered table-striped mb-0">
+                        <thead class="table-light">
+                            <tr>
+                                <th>Email</th>
+                                <th>Purpose</th>
+                                <th>Amount</th>
+                                <th>Status</th>
+                                <th>Submitted At</th>
+                                <th>Teacher</th>
+                                <th>HOD</th>
+                                <th>Principal</th>
+                                <th>MD</th>
+                                <th>Accountant</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for r in reimbursements %}
+                            <tr>
+                                {% for val in r %}
+                                <td>{{ val }}</td>
+                                {% endfor %}
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <footer class="text-center mt-5 text-muted small">
+            &copy; 2025 Reimbreeze | Admin Panel
+        </footer>
+    </div>
+
+</body>
+</html>
+
+

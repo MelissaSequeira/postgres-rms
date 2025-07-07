@@ -1,0 +1,107 @@
+/* body{
+    margin:0%;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 15px 30px;
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    
+}
+.department-name {
+    font-size: 14px;
+    font-weight: bold;
+    color: #00d0ff; 
+    margin-top: 5px;
+}
+
+
+.logo {
+    height: 100px;
+    width: 100px;
+}
+.college-name {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+    color: white;
+}
+.logout-form {
+    margin-left: auto;
+}
+
+.logout-form button {
+    background-color: #1285d2;
+    color: white;
+    padding: 8px 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.logout-form button:hover {
+    background-color: #50bad2;
+}
+
+.dashboard-container {
+    max-width: 900px;
+    margin: 40px auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.dashboard-container h2 {
+    color: #003366;
+}
+
+.apply-button {
+    padding: 10px 20px;
+    background-color: #003366;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin: 15px 0;
+    cursor: pointer;
+}
+
+.apply-button:hover {
+    background-color: #00509e;
+}
+
+.reimbursement-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.reimbursement-table th,
+.reimbursement-table td {
+    padding: 12px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.reimbursement-table th {
+    background-color: #003366;
+    color: white;
+}
+
+.reimbursement-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+} */
+.bg-custom-blue {
+    background-color: #003366 !important;
+}
+
+.text-custom-blue {
+    color: #003366 !important;
+}

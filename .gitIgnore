@@ -1,0 +1,98 @@
+.env
+Python
+───────────────────────────────────────────────
+pycache/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.dll
+*.egg
+*.egg-info/
+dist/
+build/
+*.manifest
+*.spec
+
+───────────────────────────────────────────────
+Virtual Environments
+───────────────────────────────────────────────
+venv/
+.venv/
+env/
+ENV/
+
+───────────────────────────────────────────────
+Flask / SQLAlchemy
+───────────────────────────────────────────────
+instance/
+*.db
+*.sqlite3
+*.log
+*.pid
+
+Upload folders & generated reports
+/uploads/
+*.pdf
+*.tmp
+*.bak
+
+Flask config or sensitive settings
+.env
+.env.local
+config.py # only if contains secrets
+
+───────────────────────────────────────────────
+IDEs and Editors
+───────────────────────────────────────────────
+VSCode
+.vscode/
+
+PyCharm
+.idea/
+*.iml
+
+Spyder
+.spyderproject
+.spyproject
+
+───────────────────────────────────────────────
+OS Specific
+───────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+───────────────────────────────────────────────
+Testing / Coverage
+───────────────────────────────────────────────
+htmlcov/
+.tox/
+.nox/
+.coverage
+.cache
+pytest_cache/
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+
+───────────────────────────────────────────────
+Byte-compiled / temp files
+───────────────────────────────────────────────
+*.swp
+*.swo
+*~
+
+───────────────────────────────────────────────
+Jupyter (if any)
+───────────────────────────────────────────────
+.ipynb_checkpoints/
+
+───────────────────────────────────────────────
+Node (if frontend is present)
+───────────────────────────────────────────────
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log

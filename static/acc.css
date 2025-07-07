@@ -1,0 +1,127 @@
+/* 
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #003366;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.logo {
+    height: 100px;
+    width: 100px;
+}
+
+.college-name {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.logout-form {
+    margin-left: auto;
+}
+
+.logout-form button {
+    background-color: #1285d2;
+    color: white;
+    padding: 8px 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.logout-form button:hover {
+    background-color: #50bad2;
+}
+
+.table-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    overflow-x: auto;
+}
+
+.table-container h2 {
+    text-align: center;
+    color: #003366;
+    margin-bottom: 25px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+table th, table td {
+    border: 1px solid #ccc;
+    padding: 12px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+table th {
+    background-color: #003366;
+    color: white;
+}
+
+table td a {
+    color: #00509e;
+    text-decoration: none;
+}
+
+table td a:hover {
+    text-decoration: underline;
+}
+
+table textarea {
+    width: 100%;
+    height: 60px;
+    resize: vertical;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    padding: 6px;
+}
+
+table button {
+    padding: 8px 12px;
+    margin: 5px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button[value="approve"] {
+    background-color: #28a745;
+    color: white;
+}
+
+button[value="approve"]:hover {
+    background-color: #218838;
+}
+
+button[value="reject"] {
+    background-color: #dc3545;
+    color: white;
+}
+
+button[value="reject"]:hover {
+    background-color: #c82333;
+} */
