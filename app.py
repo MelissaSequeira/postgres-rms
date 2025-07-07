@@ -427,7 +427,7 @@ def md_dashboard():
         flash('Access denied', 'danger')
         return redirect(url_for('login'))
     requests = get_pending_requests_for_md()
-    return render_template('MD_dashboard.html', requests=requests)
+    return render_template('md_dashboard.html', requests=requests)
 
 @app.route('/md_approve/<int:req_id>', methods=['POST'])
 def md_approve(req_id):
