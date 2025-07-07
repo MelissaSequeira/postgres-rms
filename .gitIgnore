@@ -1,4 +1,5 @@
-
+.env
+Python
 ───────────────────────────────────────────────
 pycache/
 *.py[cod]
@@ -36,7 +37,8 @@ Upload folders & generated reports
 *.tmp
 *.bak
 
-
+Flask config or sensitive settings
+.env
 .env.local
 config.py # only if contains secrets
 
